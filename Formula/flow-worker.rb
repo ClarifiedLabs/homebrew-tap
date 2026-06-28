@@ -1,14 +1,14 @@
 class FlowWorker < Formula
   desc "Worker supervisor for issue-driven agent work"
   homepage "https://github.com/ClarifiedLabs/flow"
-  url "https://github.com/ClarifiedLabs/flow/archive/refs/tags/v0.0.2.tar.gz"
-  sha256 "23d4e75eecd0b04e4f2d4315ea17845cf5955903af154e616a3790fc97878120"
-  version "0.0.2"
+  url "https://github.com/ClarifiedLabs/flow/archive/refs/tags/v0.0.3.tar.gz"
+  sha256 "1e20a93514a94031e7dda0294673bcebb8f1447ae9e2f5a2681dee83e1b56bff"
+  version "0.0.3"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/ClarifiedLabs/flow/releases/download/v0.0.2"
-    sha256 cellar: :any, x86_64_linux: "7d2608e1b4ef66490b4f2c2e80941cf66d19eacb1981409c56205c65128b72db"
+    root_url "https://github.com/ClarifiedLabs/flow/releases/download/v0.0.3"
+    sha256 cellar: :any, x86_64_linux: "3fbd9e6875a477ea744242b8b540a728640d5e8b4b9d45a064b6b302b0354c17"
   end
 
   depends_on "go" => :build

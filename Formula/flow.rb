@@ -1,14 +1,14 @@
 class Flow < Formula
   desc "CLI for local issue-driven agent work"
   homepage "https://github.com/ClarifiedLabs/flow"
-  url "https://github.com/ClarifiedLabs/flow/archive/refs/tags/v0.0.2.tar.gz"
-  sha256 "23d4e75eecd0b04e4f2d4315ea17845cf5955903af154e616a3790fc97878120"
-  version "0.0.2"
+  url "https://github.com/ClarifiedLabs/flow/archive/refs/tags/v0.0.3.tar.gz"
+  sha256 "1e20a93514a94031e7dda0294673bcebb8f1447ae9e2f5a2681dee83e1b56bff"
+  version "0.0.3"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/ClarifiedLabs/flow/releases/download/v0.0.2"
-    sha256 cellar: :any, x86_64_linux: "8705b88db7b23c92bfdbca03732f026c400904af65f807890bfe9d56da4c1c85"
+    root_url "https://github.com/ClarifiedLabs/flow/releases/download/v0.0.3"
+    sha256 cellar: :any, x86_64_linux: "71b737bddfa95685eb27275a76ee3df3d59183bece5c1f89e166c96185d0a90e"
   end
 
   depends_on "go" => :build
