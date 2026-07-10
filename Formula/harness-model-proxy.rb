@@ -1,14 +1,14 @@
 class HarnessModelProxy < Formula
   desc "Provider and model proxy for harness"
   homepage "https://github.com/ClarifiedLabs/harness"
-  url "https://github.com/ClarifiedLabs/harness/archive/refs/tags/v0.0.28.tar.gz"
-  sha256 "e0b06bd77b4b1ad0c5b6fe07d2d85aa62482c22b64e7b68340243d3ff4a99bb6"
-  version "0.0.28"
+  url "https://github.com/ClarifiedLabs/harness/archive/refs/tags/v0.0.29.tar.gz"
+  sha256 "88eeab9179b95e4aeb786a9bc3bd4f909e460a8184d38d97d40b0f8d366a3f7f"
+  version "0.0.29"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/ClarifiedLabs/harness/releases/download/v0.0.28"
-    sha256 cellar: :any, x86_64_linux: "842e5af08abb95605e51966be6761d1eac754dedca6cf1ec580e34af51eac7c7"
+    root_url "https://github.com/ClarifiedLabs/harness/releases/download/v0.0.29"
+    sha256 cellar: :any, x86_64_linux: "021c1f787291f9bed829e2b1319527726c98c45747df19be1d8d4586d7b2e3d6"
   end
 
   depends_on "go" => :build
