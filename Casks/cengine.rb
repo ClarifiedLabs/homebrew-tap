@@ -1,6 +1,6 @@
 cask "cengine" do
-  version "0.0.3"
-  sha256 "492c98574abd394292dda27d70862073aedc178c15f55548dc2bdb15144c4594"
+  version "0.0.4"
+  sha256 "e09347ffaef438d17b88f07e2a3d9903a9847f4d763aa6df5cd165cbe8c3eeb8"
 
   url "https://github.com/ClarifiedLabs/cengine/releases/download/v#{version}/cengine-#{version}.pkg"
   name "cengine"
