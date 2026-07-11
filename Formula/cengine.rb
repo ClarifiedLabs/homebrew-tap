@@ -1,9 +1,9 @@
 class Cengine < Formula
   desc "Docker Engine-compatible daemon using Apple Containerization"
   homepage "https://github.com/ClarifiedLabs/cengine"
-  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.6/cengine-0.0.6.dmg"
-  sha256 "fd4a6e7642733b40487d449814ce2cbd96832d47891ae37e4d073b872f8e00e0"
-  version "0.0.6"
+  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.8/cengine-0.0.8.dmg"
+  sha256 "0abb37acda9198af55b6e1c1213d7630e532ee9cc4a556509c57edf6a2efe295"
+  version "0.0.8"
   license "MIT"
 
   depends_on arch: :arm64
