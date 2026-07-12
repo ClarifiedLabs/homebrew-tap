@@ -1,6 +1,6 @@
 cask "macvm" do
-  version "0.0.4"
-  sha256 "945db6d571ac1e69f1d262a0fb8a1539d54725ba55cfc79b5f26a1da492a3bba"
+  version "0.0.6"
+  sha256 "68583be74ac59f84031e76058ad7df91759546b61a8dd995a9c770893de8bcb4"
 
   url "https://github.com/ClarifiedLabs/macvm/releases/download/v#{version}/MacVM-#{version}.pkg"
   name "MacVM"
@@ -11,6 +11,11 @@ cask "macvm" do
   depends_on macos: :tahoe
 
   pkg "MacVM-#{version}.pkg"
+
+  caveats <<~EOS
+    Ansible is optional and is required only when using provisioning profiles:
+      brew install ansible
+  EOS
 
   uninstall pkgutil: "dev.macvm.macvm.pkg"
 end
