@@ -1,8 +1,8 @@
 cask "cengine" do
-  version "0.0.11"
-  sha256 "d92a39265dfab754f35f3097f7d88b491b1f33afc67e752c1bb64f1cd22dc98d"
+  version "0.0.12"
+  sha256 "93e9ce34be6eda888372b299562a49d5b21e5ccf6aef9b754ceb99c772a48689"
 
-  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.11/cengine-0.0.11.pkg"
+  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.12/cengine-0.0.12.pkg"
   name "cengine"
   desc "Docker Engine-compatible daemon using Apple Containerization"
   homepage "https://github.com/ClarifiedLabs/cengine"
@@ -10,11 +10,16 @@ cask "cengine" do
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
-  pkg "cengine-0.0.11.pkg"
+  pkg "cengine-0.0.12.pkg"
 
   uninstall early_script: {
-              executable: "/Applications/cengine.app/Contents/MacOS/cengine",
-              args: ["--uninstall-support"],
+              executable: "/bin/sh",
+              args: [
+                "-c",
+                'if [ -x "$1" ]; then "$1" --uninstall-support; fi',
+                "--",
+                "/Applications/cengine.app/Contents/MacOS/cengine",
+              ],
               must_succeed: false,
             },
             launchctl: ["dev.cengine.engine", "dev.cengine.network-helper"],
