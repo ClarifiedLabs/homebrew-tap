@@ -1,8 +1,8 @@
 cask "macvm" do
-  version "0.0.11"
-  sha256 "66f25650266fcf7ec9eaa3e9dac5c33612e7107396f062d9d7ed3678f7ed3896"
+  version "0.0.12"
+  sha256 "e8430f585003af8eca3ef818ba2501592a197e80b17270c5d58a83de870d6007"
 
-  url "https://github.com/ClarifiedLabs/macvm/releases/download/v#{version}/MacVM-#{version}.pkg"
+  url "https://github.com/ClarifiedLabs/macvm/releases/download/v#{version}/MacVM-#{version}.dmg"
   name "MacVM"
   desc "Create and run macOS virtual machines on Apple silicon"
   homepage "https://github.com/ClarifiedLabs/macvm"
@@ -10,12 +10,13 @@ cask "macvm" do
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
-  pkg "MacVM-#{version}.pkg"
+  app "MacVM.app"
+  binary "#{appdir}/MacVM.app/Contents/Helpers/macvm"
+
+  uninstall quit: "dev.macvm.macvm"
 
   caveats <<~EOS
     Ansible is optional and is required only when using provisioning profiles:
       brew install ansible
   EOS
-
-  uninstall pkgutil: "dev.macvm.macvm.pkg"
 end
