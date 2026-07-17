@@ -1,8 +1,8 @@
 cask "cengine" do
-  version "0.0.34"
-  sha256 "e4c0186018852f2ffa790d0e34ef014c20c857622f8ca3edf50b427ebb780cf2"
+  version "0.0.35"
+  sha256 "56d6e470c828c6237233422b2bac262cd5b755dc6f45fff76c473f6e03892e4d"
 
-  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.34/cengine-0.0.34.pkg"
+  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.35/cengine-0.0.35.pkg"
   name "cengine"
   desc "Docker Engine-compatible daemon using one raw Linux VM per container"
   homepage "https://github.com/ClarifiedLabs/cengine"
@@ -10,11 +10,11 @@ cask "cengine" do
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
-  pkg "cengine-0.0.34.pkg"
+  pkg "cengine-0.0.35.pkg"
 
   postflight do
     system_command "/usr/bin/open",
-                   args: ["/Applications/cengine.app"],
+                   args: ["/Applications/cengine.app", "--args", "--opened-by-installer"],
                    must_succeed: false
   end
 
@@ -43,7 +43,8 @@ cask "cengine" do
   ]
 
   caveats <<~EOS
-    cengine launches after installation and upgrades so enabled services use the installed version.
+    Open cengine after a fresh install to enable its services. Upgrades resume a previously enabled engine.
+    A standard reinstall restores an active cengine Docker context on the next engine start.
     A standard uninstall preserves VM and image data. To remove all cengine data instead:
       brew uninstall --cask --zap cengine
   EOS
