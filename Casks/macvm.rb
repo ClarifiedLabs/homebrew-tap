@@ -1,6 +1,6 @@
 cask "macvm" do
-  version "0.0.16"
-  sha256 "6b611c87610acbad0a73ccc5a8851dde094804a39987dfe458d61d9fbd2d9539"
+  version "0.0.17"
+  sha256 "f54dddb6232a0130641ed66c1cc688a3733dfb976dc3082831042bb753f05f5d"
 
   url "https://github.com/ClarifiedLabs/macvm/releases/download/v#{version}/MacVM-#{version}.dmg"
   name "MacVM"
