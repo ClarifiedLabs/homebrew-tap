@@ -1,8 +1,8 @@
 cask "cengine" do
-  version "0.0.41"
-  sha256 "f10691a7531eff61c705d3f391d5c57a2aebbe0d9342f61f1d7762dfe32c470a"
+  version "0.0.42"
+  sha256 "b8fcd63e6bcd572c3c168135652607cd6525d2cb4eca561ac4cb30a12ce4c483"
 
-  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.41/cengine-0.0.41.pkg"
+  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.42/cengine-0.0.42.pkg"
   name "cengine"
   desc "Docker Engine-compatible daemon using one raw Linux VM per container"
   homepage "https://github.com/ClarifiedLabs/cengine"
@@ -10,7 +10,7 @@ cask "cengine" do
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
-  pkg "cengine-0.0.41.pkg"
+  pkg "cengine-0.0.42.pkg"
 
   postflight do
     system_command "/usr/bin/open",
