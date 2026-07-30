@@ -1,14 +1,14 @@
 class Harness < Formula
   desc "Tool-using LLM harness CLI"
   homepage "https://github.com/ClarifiedLabs/harness"
-  url "https://github.com/ClarifiedLabs/harness/archive/refs/tags/v0.4.2.tar.gz"
-  sha256 "701a02af67052efc7e2ba97f648fe20817edf6f81ddccde779a7c8b55ede7c0d"
-  version "0.4.2"
+  url "https://github.com/ClarifiedLabs/harness/archive/refs/tags/v0.4.3.tar.gz"
+  sha256 "5fb2084b145362d3efd7b4e1896ad19a851bf3e716ee10b6d8107b66c6507a1b"
+  version "0.4.3"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/ClarifiedLabs/harness/releases/download/v0.4.2"
-    sha256 cellar: :any, x86_64_linux: "16a573787f1abe70072829d5ede23906837dad233f833ea8c9b16bda9e8a7566"
+    root_url "https://github.com/ClarifiedLabs/harness/releases/download/v0.4.3"
+    sha256 cellar: :any, x86_64_linux: "183605827b1329a987d097666576ccb2ff819b415291cfab798d404f7b64d1e9"
   end
 
   depends_on "go" => :build
