@@ -1,9 +1,9 @@
 class FlowFull < Formula
   desc "All Flow commands for task-driven agent work"
   homepage "https://github.com/ClarifiedLabs/flow"
-  url "https://github.com/ClarifiedLabs/flow/archive/refs/tags/v0.0.8.tar.gz"
-  sha256 "4d1ee1e875d607740ac829028fd1f451377c36a624fe22670876a2edd17ec6ac"
-  version "0.0.8"
+  url "https://github.com/ClarifiedLabs/flow/archive/refs/tags/v0.0.9.tar.gz"
+  sha256 "b52c5daa501ccbd64f614bb6bcbf8aa0daa6a343713af029245b53390eebd1b0"
+  version "0.0.9"
   license "MIT"
 
   depends_on "clarifiedlabs/tap/flow"
