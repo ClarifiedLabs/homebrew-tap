@@ -1,14 +1,14 @@
 class FlowOrchestrator < Formula
   desc "Durable assignment orchestrator for task-driven agent work"
   homepage "https://github.com/ClarifiedLabs/flow"
-  url "https://github.com/ClarifiedLabs/flow/archive/refs/tags/v0.0.11.tar.gz"
-  sha256 "98ef850d3dd915238686dc76da491082144b37024243ed599f74d782707118c5"
-  version "0.0.11"
+  url "https://github.com/ClarifiedLabs/flow/archive/refs/tags/v0.0.12.tar.gz"
+  sha256 "a1a8ea6eba43c8fe485d2db48e0eab0acee863a78854e9c88793fbb373001730"
+  version "0.0.12"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/ClarifiedLabs/flow/releases/download/v0.0.11"
-    sha256 cellar: :any, x86_64_linux: "b302194cc81bff49049dc057cac1c1cda8b5943f774226ea7434342d1c2ddce6"
+    root_url "https://github.com/ClarifiedLabs/flow/releases/download/v0.0.12"
+    sha256 cellar: :any, x86_64_linux: "c9a31365407f9cbd0ffe8d648b993ba1e39e19cb39bc416ac952a86013b0603a"
   end
 
   depends_on "go" => :build
