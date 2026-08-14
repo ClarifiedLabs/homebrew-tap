@@ -1,14 +1,14 @@
 class HarnessFull < Formula
   desc "Meta formula for the harness CLI and proxy binaries"
   homepage "https://github.com/ClarifiedLabs/harness"
-  url "https://github.com/ClarifiedLabs/harness/archive/refs/tags/v0.5.9.tar.gz"
-  sha256 "92603a0713fa61e597634910cdbdc39c3579c49b0feb691d7b18dd5b92b93a8d"
-  version "0.5.9"
+  url "https://github.com/ClarifiedLabs/harness/archive/refs/tags/v0.5.10.tar.gz"
+  sha256 "acbdfd8d1e25fea3b2519e9c64557c58e364b5ed151cfc9a321bbbd72f50f549"
+  version "0.5.10"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/ClarifiedLabs/harness/releases/download/v0.5.9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e61ad4fb96ce0efe7af1379b87df941c4114c456fd79361224436fcb3706bd46"
+    root_url "https://github.com/ClarifiedLabs/harness/releases/download/v0.5.10"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "592ab7965ceb9400269f45be381a74cee365b154bb1755d0aeee4e27aef5322e"
   end
 
   depends_on "harness"
