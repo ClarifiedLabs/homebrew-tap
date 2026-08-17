@@ -1,14 +1,14 @@
 class FlowServer < Formula
   desc "Coordinator server for task-driven agent work"
   homepage "https://github.com/ClarifiedLabs/flow"
-  url "https://github.com/ClarifiedLabs/flow/archive/refs/tags/v0.0.18.tar.gz"
-  sha256 "ffcd7e2b99e3eb4abb48d7d47dbb251596bbcf2710ab40fe0bed998558768e16"
-  version "0.0.18"
+  url "https://github.com/ClarifiedLabs/flow/archive/refs/tags/v0.0.19.tar.gz"
+  sha256 "38a7ad0a90497868a5f653c612b3e6b5fa0799fa133f124597775b95c155f1bd"
+  version "0.0.19"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/ClarifiedLabs/flow/releases/download/v0.0.18"
-    sha256 cellar: :any, x86_64_linux: "1f8c596d326b87a132c8a1a2dbf97680eaf7acaf2f5b64b6915ad95e510a3854"
+    root_url "https://github.com/ClarifiedLabs/flow/releases/download/v0.0.19"
+    sha256 cellar: :any, x86_64_linux: "1ad58bf84d6fe117aee0dbb2e2ac3dae23e675d20d39915b5f4ed75b2ff9c3e2"
   end
 
   depends_on "go" => :build
