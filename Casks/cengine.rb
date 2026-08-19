@@ -1,8 +1,8 @@
 cask "cengine" do
-  version "0.0.50"
-  sha256 "81fbe0c71f53e68b21e6d232238575b701b92f05d287795a33baba4d563b9e55"
+  version "0.0.51"
+  sha256 "adfa277701f3c0eb660b309900dd33eb17b4d266660dd9c0e72df8a2a3d7064b"
 
-  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.50/cengine-0.0.50.pkg"
+  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.51/cengine-0.0.51.pkg"
   name "cengine"
   desc "Docker Engine-compatible daemon using one raw Linux VM per container"
   homepage "https://github.com/ClarifiedLabs/cengine"
@@ -11,7 +11,7 @@ cask "cengine" do
   depends_on macos: :tahoe
   depends_on formula: "docker"
 
-  pkg "cengine-0.0.50.pkg"
+  pkg "cengine-0.0.51.pkg"
 
   postflight do
     system_command "/usr/bin/open",
@@ -27,7 +27,9 @@ cask "cengine" do
                 "--",
                 "/Applications/cengine.app/Contents/MacOS/cengine",
               ],
-              must_succeed: true,
+              # Teardown is best effort. Homebrew's launchctl/delete stanzas
+              # must still remove cengine if stale VM ownership is ambiguous.
+              must_succeed: false,
             },
             launchctl: ["dev.cengine.engine", "dev.cengine.network-helper"],
             quit: "dev.cengine.app",
