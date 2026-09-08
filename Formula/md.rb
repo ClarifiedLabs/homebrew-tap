@@ -1,14 +1,14 @@
 class Md < Formula
   desc "Terminal Markdown viewer with ASCII Mermaid diagrams"
   homepage "https://github.com/ClarifiedLabs/mdcli"
-  url "https://github.com/ClarifiedLabs/mdcli/archive/refs/tags/v0.0.3.tar.gz"
-  sha256 "be56c4e6eb9dda19ecffe8d283965ac6b570557127d8ec5be3fd3e91ca5d5105"
-  version "0.0.3"
+  url "https://github.com/ClarifiedLabs/mdcli/archive/refs/tags/v0.0.4.tar.gz"
+  sha256 "cecae94a666772eddb89aea65dfc692017c32590bcb6810d1506177f2a979394"
+  version "0.0.4"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/ClarifiedLabs/mdcli/releases/download/v0.0.3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "7ab5b81dfbb85e60fdd93cfa99ae74dd4921504d49277f693b345e56b5b696dd"
+    root_url "https://github.com/ClarifiedLabs/mdcli/releases/download/v0.0.4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1944b3fdfad0a3e390221236ad4f8870738a71f87c4766a926ddf957e7071c19"
   end
 
   depends_on "go" => :build
