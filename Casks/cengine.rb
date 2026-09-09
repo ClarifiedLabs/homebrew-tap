@@ -1,8 +1,8 @@
 cask "cengine" do
-  version "0.0.57"
-  sha256 "f2083ba1975663ea2f47fb1128f5475fac2d61c6df067a450d6792e3112ed82c"
+  version "0.0.58"
+  sha256 "5fe21baa662cfb2bcb76c82b9e16de7e2c8a1497b6d6c5bd906b335793f66e93"
 
-  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.57/cengine-0.0.57.pkg"
+  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.58/cengine-0.0.58.pkg"
   name "cengine"
   desc "Docker Engine-compatible daemon using one raw Linux VM per container"
   homepage "https://github.com/ClarifiedLabs/cengine"
@@ -11,7 +11,7 @@ cask "cengine" do
   depends_on macos: :tahoe
   depends_on formula: "docker"
 
-  pkg "cengine-0.0.57.pkg"
+  pkg "cengine-0.0.58.pkg"
 
   postflight_steps do
     # Older Homebrew versions do not accept must_succeed on run steps.
