@@ -1,14 +1,14 @@
 class HarnessMcpProxy < Formula
   desc "MCP proxy daemon and debug client for harness"
   homepage "https://github.com/ClarifiedLabs/harness"
-  url "https://github.com/ClarifiedLabs/harness/archive/refs/tags/v0.5.46.tar.gz"
-  sha256 "502b435bb529a8b5e739222aec60d760ccbe4a862ab51322535271bc17c515ba"
-  version "0.5.46"
+  url "https://github.com/ClarifiedLabs/harness/archive/refs/tags/v0.5.48.tar.gz"
+  sha256 "79ed409d301fdf7efffaf2d3fe15965729bc832bb84faa9b3fba92b24a723d5d"
+  version "0.5.48"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/ClarifiedLabs/harness/releases/download/v0.5.46"
-    sha256 cellar: :any, x86_64_linux: "d311dcd386d4538eddb85bc7beb219fc284e4c9ec9a2d46a0612ad6325ba1223"
+    root_url "https://github.com/ClarifiedLabs/harness/releases/download/v0.5.48"
+    sha256 cellar: :any, x86_64_linux: "054c4ddc85507e490c0e737687b0aa2888b4abc03b4fe5b5b36edb2908ba8f53"
   end
 
   depends_on "go" => :build
