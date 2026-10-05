@@ -1,8 +1,8 @@
 cask "cengine" do
-  version "0.0.58"
-  sha256 "5fe21baa662cfb2bcb76c82b9e16de7e2c8a1497b6d6c5bd906b335793f66e93"
+  version "0.1.2"
+  sha256 "e023a24edcd556e25e499ce9ef01e527c19a85500d970bd7a40a415d473256b2"
 
-  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.0.58/cengine-0.0.58.pkg"
+  url "https://github.com/ClarifiedLabs/cengine/releases/download/v0.1.2/cengine-0.1.2.pkg"
   name "cengine"
   desc "Docker Engine-compatible daemon using one raw Linux VM per container"
   homepage "https://github.com/ClarifiedLabs/cengine"
@@ -11,17 +11,7 @@ cask "cengine" do
   depends_on macos: :tahoe
   depends_on formula: "docker"
 
-  pkg "cengine-0.0.58.pkg"
-
-  postflight_steps do
-    # Older Homebrew versions do not accept must_succeed on run steps.
-    # Opening the app is best effort, including on headless CI runners.
-    run "/bin/sh",
-        args: [
-          "-c", '"$@" || true', "--", "/usr/bin/open",
-          "/Applications/cengine.app", "--args", "--opened-by-installer",
-        ]
-  end
+  pkg "cengine-0.1.2.pkg"
 
   uninstall early_script: {
               executable: "/bin/sh",
