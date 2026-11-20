@@ -8,6 +8,8 @@ class HarnessFull < Formula
 
   bottle do
     root_url "https://github.com/ClarifiedLabs/harness/releases/download/v0.5.67"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "88b5f6121f36be50e9ef660d6f3942bc054458e13b64f8b0b14b5f08c0d1d119"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "1573adafdbcaa491d8b9ca1bcf8b617e1d076042f2b6ba2d30f24fb18d804acd"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "f22109fff293a528c62ebbc2e183dcf4f142862c4c7c491de029bb63cef2d425"
   end
 
