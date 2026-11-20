@@ -1,17 +1,17 @@
 class Md < Formula
   desc "Terminal Markdown viewer with ASCII Mermaid diagrams"
   homepage "https://github.com/ClarifiedLabs/mdcli"
-  url "https://github.com/ClarifiedLabs/mdcli/archive/refs/tags/v0.0.6.tar.gz"
-  sha256 "e0f31d66ca53301c9ced743fcfb86412dbf8e3a75ceeabf33b6a68b02ca7d978"
-  version "0.0.6"
+  url "https://github.com/ClarifiedLabs/mdcli/archive/refs/tags/v0.0.7.tar.gz"
+  sha256 "aed137009a42c27fbb483431894908cdfa7e2e99e6ef8d7731c780d6fd48f3f8"
+  version "0.0.7"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/ClarifiedLabs/mdcli/releases/download/v0.0.6"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "ccafbfebd6389fb1ad69e6da5864d8f9086acef59a061a8cf17b684df28278b0"
-    sha256 cellar: :any_skip_relocation, tahoe: "eb0193ce15b2a62b181ef966ae75fe3f7dc5ce1df726360139c71f9c0dad3b08"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "afa5a3f3b8ce87f68a2a1429766ce039eee0a2aa4429a8d9a4fd9a75019947a2"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "8bfbe394589c5e7ecd985a2f714c35c43c9cf75441e8d8a98989c3eb3768beae"
+    root_url "https://github.com/ClarifiedLabs/mdcli/releases/download/v0.0.7"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "cd86a40a5a3b3f9afb42ad54247be3cac175b4536f70b70173e69388c1881c2b"
+    sha256 cellar: :any_skip_relocation, tahoe:        "2296b79c28f1987472d0765f1158428ab3cd810b145aeab90f88ef6e6ce185e9"
+    sha256 cellar: :any_skip_relocation, arm64_linux:  "805ce3fe589952e5ee046bbb71d4eab2c4709c992728439c69ac4c82e0aab995"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "891560d95c75057a42085b741b00251e335bb63e69c02b5ec715cf8fde8fb897"
   end
 
   depends_on "go" => :build
