@@ -8,6 +8,9 @@ class Md < Formula
 
   bottle do
     root_url "https://github.com/ClarifiedLabs/mdcli/releases/download/v0.0.6"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "ccafbfebd6389fb1ad69e6da5864d8f9086acef59a061a8cf17b684df28278b0"
+    sha256 cellar: :any_skip_relocation, tahoe: "eb0193ce15b2a62b181ef966ae75fe3f7dc5ce1df726360139c71f9c0dad3b08"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "afa5a3f3b8ce87f68a2a1429766ce039eee0a2aa4429a8d9a4fd9a75019947a2"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "8bfbe394589c5e7ecd985a2f714c35c43c9cf75441e8d8a98989c3eb3768beae"
   end
 
