@@ -1,16 +1,16 @@
 class HarnessMcpProxy < Formula
   desc "MCP proxy daemon and debug client for harness"
   homepage "https://github.com/ClarifiedLabs/harness"
-  url "https://github.com/ClarifiedLabs/harness/archive/refs/tags/v0.5.67.tar.gz"
-  sha256 "cf7c327e3a30cf7627a12c0e0c30adf75642853124f407497ccde4c64f6b1ab5"
-  version "0.5.67"
+  url "https://github.com/ClarifiedLabs/harness/archive/refs/tags/v0.5.68.tar.gz"
+  sha256 "c381994b3e9613bcdab64b5296faaf18df48f8f043561c9499cf98bf90b82e2c"
+  version "0.5.68"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/ClarifiedLabs/harness/releases/download/v0.5.67"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "75d4317e7b46a96a0d88e8ec5a76d7d3b2a57d2152b3c7334dc8d1ffdbcfaf6c"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "09b45599d5bde70da8b836902b004cc33e15c8d5bc2347ff9df98f7a1cc7f9c0"
-    sha256 cellar: :any, x86_64_linux: "d27758a93c7cc54a79b81efc28878df2d2c605271737b4390b4f616499e2a395"
+    root_url "https://github.com/ClarifiedLabs/harness/releases/download/v0.5.68"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "2553023a280bd0599e533a2e53556433fe676afc592d20d9557288c678ea8071"
+    sha256 cellar: :any_skip_relocation, arm64_linux:  "ace779940b85ae5b0a572a43bb6d6c62bf176678b577ef0edc3fee4df41ec81a"
+    sha256 cellar: :any,                 x86_64_linux: "99be7b5bd669323cca14ac852d7e3a77dd065fb169f2156ebb00206406197171"
   end
 
   depends_on "go" => :build
